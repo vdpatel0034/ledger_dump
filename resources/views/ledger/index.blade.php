@@ -20,9 +20,7 @@
         .container {
             width: 92%;
             margin: 0 auto;
-            padding: 20px;
-            overflow-x: auto; 
-            white-space: nowrap; 
+           
         }
 
         h2 {
@@ -30,6 +28,13 @@
             font-size: 2rem;
             text-align: center;
             margin-bottom: 20px;
+        }
+
+        .table_container{
+            width: 100%;
+            margin: 0 auto;
+            overflow-x: auto; 
+            white-space: nowrap;
         }
 
         table {
@@ -178,6 +183,7 @@
             </div>
         </form>
 
+        <div class="table_container">
         <!-- Ledger Table -->
         <table class="table table-bordered table-striped">
             <thead>
@@ -254,7 +260,7 @@
                 @endforelse
             </tbody>
         </table>
-
+    </div>
         <div class="d-flex justify-content-center">
             {{ $ledgers->links() }}
         </div>    
